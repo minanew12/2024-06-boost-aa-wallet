@@ -1,0 +1,10 @@
+[profile.default]
+build_info = true
+optimizer = true
+optimizer_runs = 10_000
+libs = ['node_modules', 'lib']
+out = 'out'
+src = 'src'
+test = 'test'
+solc_version = '0.8.25'
+evm_version = 'cancun'

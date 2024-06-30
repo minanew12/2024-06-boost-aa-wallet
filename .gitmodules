@@ -1,0 +1,21 @@
+[submodule "boost-accounts/lib/forge-std"]
+	path = boost-accounts/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "boost-accounts/lib/openzeppelin-contracts"]
+	path = boost-accounts/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "boost-accounts/lib/account-abstraction"]
+	path = boost-accounts/lib/account-abstraction
+	url = https://github.com/eth-infinitism/account-abstraction
+[submodule "boost-accounts/lib/solady"]
+	path = boost-accounts/lib/solady
+	url = https://github.com/vectorized/solady
+[submodule "boost-accounts/lib/webauthn-sol"]
+	path = boost-accounts/lib/webauthn-sol
+	url = https://github.com/base-org/webauthn-sol
+[submodule "boost-accounts/lib/FreshCryptoLib"]
+	path = boost-accounts/lib/FreshCryptoLib
+	url = https://github.com/rdubois-crypto/FreshCryptoLib
+[submodule "boost-accounts/lib/RS256Verify"]
+	path = boost-accounts/lib/RS256Verify
+	url = https://github.com/jayden-sudo/RS256Verify
