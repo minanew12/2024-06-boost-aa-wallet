@@ -1,0 +1,58 @@
+{
+  "name": "boost-protocol",
+  "private": true,
+  "type": "module",
+  "repository": "https://github.com/rabbitholegg/boost-protocol",
+  "author": "Boost Team<boost-team@boost.xyz>",
+  "license": "GPL-3.0-or-later",
+  "workspaces": ["packages/*"],
+  "packageManager": "pnpm@8.15.8",
+  "engines": {
+    "pnpm": "8.15.8"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "changeset": "changeset",
+    "changeset:release": "turbo run build && changeset publish",
+    "changeset:version": "changeset version && pnpm install --lockfile-only",
+    "publish-packages": "pnpm changeset publish",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "prepare": "lefthook install",
+    "postinstall": "git submodule update --init",
+    "test": "turbo run test",
+    "test:ci": "turbo run test:ci"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.1",
+    "@boostxyz/cli": "workspace:*",
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.7",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.11",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@types/node": "^20.11.24",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@wagmi/core": "^2.13.4",
+    "arg": "^5.0.2",
+    "find-process": "^1.4.7",
+    "hardhat": "^2.22.5",
+    "lefthook": "^1.6.15",
+    "prettier": "^3.2.5",
+    "solady": "^0.0.208",
+    "turbo": "^2.0.0",
+    "typedoc": "^0.26.4",
+    "typedoc-material-theme": "^1.1.0",
+    "typescript": "^5.3.3",
+    "viem": "^2.20.1",
+    "vite": "^5.2.13",
+    "vitest": "^1.6.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@wagmi/core": "2.13.0",
+      "viem": "2.9.27"
+    }
+  }
+}
