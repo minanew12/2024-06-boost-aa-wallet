@@ -76,6 +76,8 @@ ___
 We understand there may be griefing vectors related to registering junk namespaces on the registry, and spamming `createBoost` but we'll deploy auth reactively to these issues when/if they manifest.
 
 We understand that it may be possible to configure a junk-boost (i.e. incompatible modules) and configuration of a valid boost is an end-user concern up until the point where it can lead to loss of funds beyond the end users permissioned spends.
+
+Boost creators are trusted to not prevent incentives claims.
 ___
 
 ### Q: Please list any known issues and explicitly state the acceptable risks for each known issue.
