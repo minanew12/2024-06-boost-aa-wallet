@@ -7,11 +7,6 @@
 
 # Q&A
 
-### Q: On what chains are the smart contracts going to be deployed?
-EVM-compatible networks (excluding zkSync Era and other where CREATE2 operates abnormally). Specifically issues related to address derivation on ZKSync are considered out of scope
-https://docs.zksync.io/build/developer-reference/ethereum-differences/evm-instructions#address-derivation
-___
-
 ### Q: If you are integrating tokens, are you allowing only whitelisted tokens to work with the codebase or any complying with the standard? Are they assumed to have certain properties, e.g. be non-reentrant? Are there any types of [weird tokens](https://github.com/d-xo/weird-erc20) you want to integrate?
 Protocol should work with all native and ERC20 tokens that adhear to standard including weird tokens.
 No assumptions are made in regards to the properties of integrating tokens and weird trait tokens should be handled normally. Specifically we'd expect to interact with USDT and other stable coins/decimal 6 coins and erc20z from Zora as well as other fractional NFT contracts as long as they adhere to ERC20 standard. We aren't whitelisting tokens so any erc20 should work (including weird ones).
